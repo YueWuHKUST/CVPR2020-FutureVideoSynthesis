@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python test_myback.py \
+  --gpu_ids 0 \
+  --batchSize 1 \
+  --name kitti_test \
+  --ngf 32 \
+  --dataset kitti \
+  --loadSize 256 \
+  --use_my_back \
+  --ImagesRoot "/disk1/yue/kitti/raw_data/" \
+  --npy_dir "/disk2/yue/server6_backup/final/tracking/train_data_gen/generate_valid_train_list/test_finetune_0.006_no_person/" \
+  --load_pretrain "./checkpoints/kitti/"

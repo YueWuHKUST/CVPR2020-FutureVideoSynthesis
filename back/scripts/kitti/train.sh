@@ -1,0 +1,23 @@
+CUDA_VISIBLE_DEVICES=7 python train.py \
+  --gpu_ids 0 \
+  --batchSize 2 \
+  --static \
+  --name debug \
+  --dataset 'kitti' \
+  --ngf 64 \
+  --lr 1e-4 \
+  --loadSize 256 \
+  --niter 60 \
+  --lambda_D 1.0 \
+  --lambda_D_T 1.0 \
+  --lambda_F 1.0 \
+  --lambda_VGG 15.0 \
+  --lambda_smooth 1.0 \
+  --lambda_feat 15.0 \
+  --niter_decay 20 \
+  --tOut 3 \
+  --ImagesRoot "/disk1/yue/kitti/raw_data/" \
+  --SemanticRoot "/disk1/yue/kitti/semantic/" \
+  --StaticMapDir "/disk1/yue/kitti/dynamic_new/" \
+  --InstanceRoot "/disk1/yue/kitti/instance/" \
+  --load_pretrain "./checkpoints/kitti/"
