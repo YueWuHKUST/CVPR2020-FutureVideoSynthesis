@@ -7,5 +7,5 @@ CUDA_VISIBLE_DEVICES=1 python test_city_myback_next.py \
   --use_my_back \
   --next \
   --ImagesRoot "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/" \
-  --npy_dir "/disk2/yue/server6_backup/final/tracking/train_data_gen/generate_valid_train_list/test_2/" \
-  --load_pretrain "./checkpoints/city_car_final/tmp/"
+  --npy_dir "/disk2/yue/final_result/test/" \
+  --load_pretrain "./checkpoints/cityscapes/"
