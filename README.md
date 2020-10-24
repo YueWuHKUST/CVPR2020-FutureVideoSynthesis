@@ -27,7 +27,7 @@ The test results and pretrained models are in [OneDrive](https://hkustconnect-my
 
 The details of test setting can be found in [link](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/TestSetting.md)
 
-If you want to test the model from beginning, the precise test step is in [link]()
+If you want to test the model from beginning, the precise test step is in [link](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/TestStep.md)
 
 # Citation
 If you use our code or paper, please cite:
@@ -40,3 +40,8 @@ month = {June},
 year = {2020}
 }
 ```
+
+
+# Contact
+If you have any question, please feel free to contact me (Yue Wu, ywudg@connect.ust.hk)
+
