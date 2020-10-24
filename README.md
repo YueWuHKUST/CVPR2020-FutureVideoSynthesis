@@ -31,6 +31,10 @@ The details of test setting can be found in [link](https://github.com/YueWuHKUST
 
 If you want to test the model from beginning, the precise test step is in [link](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/TestStep.md)
 
+# Evaluation
+We use [LPIPS](https://github.com/alexlee-gk/lpips-tensorflow) for evaluation
+
+
 # Citation
 If you use our code or paper, please cite:
 ```
