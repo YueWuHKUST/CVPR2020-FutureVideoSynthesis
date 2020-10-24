@@ -21,19 +21,11 @@ There are exists several components in our framework
 - Video Inpainting modified from [Deep-Flow-Guided-Video-Inpainting](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting)
 
 
-# Pretrained Models
+# Pretrained Models and Results
 
-The Dynamic Detection Model weight is in [OneDrive]().
-|                  | Cityscapes     | Kitti |
-| ------           | ------------    | ------|
-| Background prediction | [OneDrive]() | [OneDrive]()|
-| Background Inpainting | [OneDrive]() | [OneDrive]()|
-| Dynamic Object Prediction | [OneDrive]() | [OneDrive]()|
+The test results and pretrained models are in [OneDrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ywudg_connect_ust_hk/ErucIeTSpbNCn7Sf5xB24F0BbSqrcRFuicNPZgK_3TXcDg?e=TBKfgU)
 
-# Results
-All of our test results are stored in [OneDrive]()
 The details of test setting can be found in [link]()
-
 If you want to test the model from beginning, the precise test step is in [link]()
 
 # Citation
