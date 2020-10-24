@@ -38,6 +38,7 @@ If you want to test the model from beginning, the precise test step is in [link]
 
 # Citation
 If you use our code or paper, please cite:
+```
 @InProceedings{Yue_2020_CVPR,
 author = {Yue Wu, Rongrong Gao, Jaesik Park and Qifeng Chen},
 title = {Future Video Synthesis with Object Motion Prediction},
@@ -45,3 +46,4 @@ booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVP
 month = {June},
 year = {2020}
 }
+```
