@@ -25,7 +25,7 @@ There are exists several components in our framework
 
 The test results and pretrained models are in [OneDrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ywudg_connect_ust_hk/ErucIeTSpbNCn7Sf5xB24F0BbSqrcRFuicNPZgK_3TXcDg?e=TBKfgU)
 
-The details of test setting can be found in [link]()
+The details of test setting can be found in [link](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/TestSetting.md)
 
 If you want to test the model from beginning, the precise test step is in [link]()
 
