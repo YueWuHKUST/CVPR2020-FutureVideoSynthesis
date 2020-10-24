@@ -22,27 +22,26 @@ There are exists several components in our framework
 
 
 # Pretrained Models
-|        | Cityscapes   | Kitti |
-| ------ | ------------ | ------|
-| Dynamic Detection| [Google Drive]()|
+
+The Dynamic Detection Model weight is in [Google Drive]().
+|                  | Cityscapes     | Kitti |
+| ------           | ------------    | ------|
 | Background prediction | [Google Drive]() | [Google Drive]()|
 | Background Inpainting | [Google Drive]() | [Google Drive]()|
 | Dynamic Object Prediction | [Google Drive]() | [Google Drive]()|
 
 # Results
-
 All of our test results are stored in [Google Drive]()
+The details of test setting can be found in [link]()
 
-# Testing 
+If you want to test the model from beginning, the precise test step is in [link]()
 
-1. Running Dynamic Detection Model to determine which objects are moving
-2. Generate Background Prediction Result 
-3. Inpaint the predicted Background
-4. Generate Dynamic Object Motion Prediction
-5. Composite the foreground and background together
-6. Running the Video Inpainting Method to obtain full results
-
-
-
-
-
+# Citation
+If you use our code or paper, please cite:
+@InProceedings{Yue_2020_CVPR,
+author = {Yue Wu, Rongrong Gao, Jaesik Park and Qifeng Chen},
+title = {Future Video Synthesis with Object Motion Prediction},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}
