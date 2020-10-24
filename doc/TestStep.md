@@ -36,4 +36,4 @@ use the script ./process_scripts/occ.py
 We use the [Deep-Flow-Guided-Video-Inpainting](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting) to inpaint occlusion area.
 
 
-Please note that, for Cityscapes dataset, after finishing the prediction of next 5 frames. We run the [semantic segmenation](https://github.com/NVIDIA/semantic-segmentation) method on predicted frames to obtain their semantic maps.
+Please note that, for Cityscapes dataset, we run the test procedure twice. After finishing the prediction of next 5 frames, we run the [semantic segmenation](https://github.com/NVIDIA/semantic-segmentation) method on predicted frames to obtain their semantic maps. It is used for next 5 to 10 frames prediction
