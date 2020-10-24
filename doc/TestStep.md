@@ -21,6 +21,11 @@ We use the [Generative Inpainting](https://github.com/JiahuiYu/generative_inpain
 # Step 4 Dynamic Motion Prediction
 
 ```
+use the python files
+./process_scripts/test_cityscapes.py ./process_scripts/test_kitti.py
+to generate list storing the paths for testing
+
+Then run
 ./fore/script/test_city.sh
 ```
 
