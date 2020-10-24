@@ -23,15 +23,15 @@ There are exists several components in our framework
 
 # Pretrained Models
 
-The Dynamic Detection Model weight is in [One Drive]().
+The Dynamic Detection Model weight is in [OneDrive]().
 |                  | Cityscapes     | Kitti |
 | ------           | ------------    | ------|
-| Background prediction | [One Drive]() | [One Drive]()|
-| Background Inpainting | [One Drive]() | [One Drive]()|
-| Dynamic Object Prediction | [One Drive]() | [One Drive]()|
+| Background prediction | [OneDrive]() | [OneDrive]()|
+| Background Inpainting | [OneDrive]() | [OneDrive]()|
+| Dynamic Object Prediction | [OneDrive]() | [OneDrive]()|
 
 # Results
-All of our test results are stored in [One Drive]()
+All of our test results are stored in [OneDrive]()
 The details of test setting can be found in [link]()
 
 If you want to test the model from beginning, the precise test step is in [link]()
