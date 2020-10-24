@@ -8,6 +8,7 @@ import cv2
 
 
 test_list = "../test_list_kitti.npy"
+# A list store all the instance masks
 
 result_path = '/disk1/yue/kitti/small_object_mask/val/'
 

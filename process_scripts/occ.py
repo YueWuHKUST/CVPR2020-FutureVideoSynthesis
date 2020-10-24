@@ -2,7 +2,7 @@ import glob, os
 from PIL import Image
 import numpy as np
 import cv2
-root = "/disk2/yue/server6_backup/final/finetune_0.002_add_person/kitti/"
+root = "/disk2/yue/result/kitti/"
 height = 256 # 512 for citysca[es
 width = 832 # 1024 for cityscapes
 num = 1337
