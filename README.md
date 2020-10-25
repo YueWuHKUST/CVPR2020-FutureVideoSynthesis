@@ -39,7 +39,7 @@ We use [LPIPS](https://github.com/alexlee-gk/lpips-tensorflow) for evaluation
 If you use our code or paper, please cite:
 ```
 @InProceedings{Yue_2020_CVPR,
-author = {Yue Wu, Rongrong Gao, Jaesik Park and Qifeng Chen},
+author = {Yue Wu and Rongrong Gao and Jaesik Park and Qifeng Chen},
 title = {Future Video Synthesis with Object Motion Prediction},
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 month = {June},
