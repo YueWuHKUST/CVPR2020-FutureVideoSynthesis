@@ -25,7 +25,7 @@ We use [PWCNet](https://github.com/NVlabs/PWC-Net/tree/master/PyTorch) to comput
 
 # Pretrained Models and Results
 
-The test results and pretrained models are in [OneDrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ywudg_connect_ust_hk/ErucIeTSpbNCn7Sf5xB24F0BbSqrcRFuicNPZgK_3TXcDg?e=TBKfgU)
+The **test results** and pretrained models are in [OneDrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ywudg_connect_ust_hk/ErucIeTSpbNCn7Sf5xB24F0BbSqrcRFuicNPZgK_3TXcDg?e=TBKfgU)
 
 The details of test setting can be found in [link](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/TestSetting.md)
 
