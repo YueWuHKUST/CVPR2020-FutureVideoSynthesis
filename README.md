@@ -51,3 +51,5 @@ year = {2020}
 # Contact
 If you have any question, please feel free to contact me (Yue Wu, ywudg@connect.ust.hk)
 
+# Acknowledgement
+The code is developed based on Vid2Vid https://github.com/NVIDIA/vid2vid
