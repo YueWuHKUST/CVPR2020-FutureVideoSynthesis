@@ -1,7 +1,13 @@
+We provide an example data about how to test our model.
+
+Please put ./example under ./FutureVideoSynthesis/
+
 # Step 1 Generate mask
 
 ```
-use ./dynamic/scripts/test.sh to generate dynamic masks, which indicates the moving cars
+
+cd ./dynamic
+run ./scripts/test_cityscapes.sh to generate dynamic masks, which indicates the moving cars
 
 use ./process_scripts/gen_nonrigid_small/non_rigid.py to generate non rigid masks(including person and biker)
 
