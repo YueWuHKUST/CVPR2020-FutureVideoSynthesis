@@ -6,6 +6,10 @@ Python 3
 
 Pytorch1.0.0
 
+# To do
+I plan to clean up the code in one month
+
+
 # Components
 
 There are exists several components in our framework. This repo only contain modified files for [Generative Inpainting](https://github.com/JiahuiYu/generative_inpainting/tree/v1.0.0) and [Deep-Flow-Guided-Video-Inpainting](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting).
