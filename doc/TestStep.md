@@ -1,6 +1,5 @@
-We provide an example data about how to test our model.
+We recommend you to directly compare with the released results.
 
-Please put ./example under ./FutureVideoSynthesis/
 
 # Step 1 Generate mask
 
