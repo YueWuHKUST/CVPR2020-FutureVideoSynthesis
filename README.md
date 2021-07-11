@@ -26,6 +26,47 @@ We use [PWCNet](https://github.com/NVlabs/PWC-Net/tree/master/PyTorch) to comput
 
 - Video Inpainting modified from [Deep-Flow-Guided-Video-Inpainting](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting)
 
+# Data preparation
+This [document](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/Data_preparation.md) illustrates how the data preprocessing is done. I release the test result in next section. If you want the preprocessed **test dataset** to verify the result, please drop me an email.
+
+```bash
+data
+├── Cityscapes
+│   ├── depth
+│   ├── dynamic
+│   ├── for_val_data
+│   ├── instance_upsnet
+│   │   └── origin_data
+│   │   └── val
+│   ├── leftImg8bit_sequence_512p (Citysapes images in 512x1024)
+│   │   └── val
+│   │   │     └── frankfurt
+│   │   │     └── lindau
+│   │   │     └── munster
+│   ├── non_rigid_mask
+│   ├── semantic 
+│   ├── small_object_mask
+├── Kitti
+│   ├── depth
+│   ├── dynamic
+│   ├── for_val_data
+│   ├── instance_upsnet
+│   │   └── origin_data
+│   │   └── val
+│   ├── raw_data_56p (Kitti images in 256x832)
+│   │   └── val
+│   │   │    └── 2011_09_26_drive_0060_sync
+│   │   │    │    └── image_02
+│   │   │    │    │     └── data
+│   │   │    └── 2011_09_26_drive_0084_sync
+│   │   │    └── 2011_09_26_drive_0093_sync
+│   │   │    └── 2011_09_26_drive_0096_sync
+│   ├── non_rigid_mask
+│   ├── semantic 
+│   ├── small_object_mask
+```
+
+
 
 # Pretrained Models and Results
 
