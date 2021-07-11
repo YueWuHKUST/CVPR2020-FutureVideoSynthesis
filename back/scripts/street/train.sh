@@ -1,7 +1,7 @@
 CUDA_VISIBLE_DEVICES=6 python train.py \
   --gpu_ids 0 \
   --batchSize 1 \
-  --name debug_city \
+  --name city \
   --ngf 64 \
   --static \
   --lr 2e-4 \
@@ -14,8 +14,8 @@ CUDA_VISIBLE_DEVICES=6 python train.py \
   --lambda_smooth 1.0 \
   --lambda_feat 15.0 \
   --niter_decay 20 \
-  --ImagesRoot "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/" \
-  --SemanticRoot "/disk1/yue/cityscapes/semantic_new/" \
-  --StaticMapDir "/disk1/yue/cityscapes/dynamic_tracking_mask/" \
-  --InstanceRoot "/disk1/yue/cityscapes/instance_upsnet/" \
+  --ImagesRoot "./data/cityscapes/leftImg8bit_sequence_512p/" \
+  --SemanticRoot "./data/cityscapes/semantic/" \
+  --StaticMapDir "./data/cityscapes/dynamic_tracking_mask/" \
+  --InstanceRoot "./data/cityscapes/instance_upsnet/" \
   --load_pretrain "./checkpoints/cityscapes/"
