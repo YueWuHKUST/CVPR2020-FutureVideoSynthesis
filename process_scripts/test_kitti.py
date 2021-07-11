@@ -185,16 +185,16 @@ def load_tracked_dict(path, images, semantics, backs, depths, dynamics, class_fi
 
 # Just save the dict of all paths for saving loading data time
 # Script for saving 
-image_dir = '/disk1/yue/kitti/raw_data/val/'
+image_dir = './data/kitti/raw_data_256p/val/'
 
 # tracking result
-track_instance_dir = '/disk1/yue/kitti/fore_val_data/val/'
-semantic_dir = '/disk1/yue/kitti/semantic/val/gray/'
-depth_dir = '/disk1/yue/kitti/raw_data_depth_256p/val/'
+track_instance_dir = './data/kitti/fore_val_data/val/'
+semantic_dir = './data/kitti/semantic/val/gray/'
+depth_dir = './data/depth/val/'
 
-my_back_dir = "/disk2/yue/final/final_result/kitti/"
-instance_origin_txt_dir = '/disk1/yue/kitti/instance_upsnet/origin_data/val/txt/'
-instance_origin_segs_dir = '/disk1/yue/kitti/instance_upsnet/origin_data/val/segs/'
+my_back_dir = "./result/kitti/"
+instance_origin_txt_dir = './data/kitti/instance_upsnet/origin_data/val/txt/'
+instance_origin_segs_dir = './data/kitti/instance_upsnet/origin_data/val/segs/'
 city_dir = os.listdir(image_dir)
 city_dir.sort() 
 cnt = 0

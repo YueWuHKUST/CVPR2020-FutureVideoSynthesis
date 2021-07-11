@@ -2,10 +2,12 @@ import glob, os
 from PIL import Image
 import numpy as np
 import cv2
-root = "/disk2/yue/result/kitti/"
-height = 256 # 512 for citysca[es
-width = 832 # 1024 for cityscapes
-num = 1337
+
+# Root of save result dir
+root = "./result/cityscapes/"
+height = 512 # 512 for cityscapes, 256 for kitti
+width = 1024 # 1024 for cityscapes, 832 for kitti
+num = 500
 pred_len = 5
 def process_fore(fore):
     kernel = np.ones((3,3),np.uint8)

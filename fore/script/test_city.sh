@@ -5,6 +5,6 @@ CUDA_VISIBLE_DEVICES=0 python test_myback.py \
   --ngf 32 \
   --loadSize 1024 \
   --use_my_back \
-  --ImagesRoot "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/" \
-  --npy_dir "/disk2/yue/final_result/test/" \
+  --ImagesRoot "./data/cityscapes/leftImg8bit_sequence_512p/" \
+  --npy_dir "./process_scripts/test/" \
   --load_pretrain "./checkpoints/cityscapes/"

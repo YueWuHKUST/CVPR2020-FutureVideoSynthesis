@@ -3,9 +3,9 @@ CUDA_VISIBLE_DEVICES=7 python test.py --gpu_ids 0 \
   --name 'cityscapes_final' \
   --dataset 'cityscapes' \
   --load_pretrain "./checkpoints/" \
-  --ImagesRoot "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/" \
-  --SemanticRoot "/disk1/yue/cityscapes/semantic_new/" \
-  --InstanceRoot "/disk1/yue/cityscapes/instance_upsnet/" \
+  --ImagesRoot "./data/cityscapes/leftImg8bit_sequence_512p/" \
+  --SemanticRoot "./data/cityscapes/semantic/" \
+  --InstanceRoot "./data/cityscapes/instance_upsnet/" \
   --results_dir "cityscapes_val" \
   --phase "val"
   # \

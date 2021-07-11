@@ -184,15 +184,15 @@ def load_tracked_dict(path, images, semantics, backs, depths, dynamics, class_fi
 
 # Just save the dict of all paths for saving loading data time
 # Script for saving 
-image_dir = '/disk1/yue/cityscapes/leftImg8bit_sequence_512p/val/'
+image_dir = './data/cityscapes/leftImg8bit_sequence_512p/val/'
 
 # the tracking result
-track_instance_dir = '/disk1/yue/cityscapes/fore_val_data/'
-semantic_dir = '/disk1/yue/cityscapes/semantic_new/val/'
-depth_dir = '/disk1/yue/cityscapes/leftImg8bit_sequence_depth/val/'
-my_back_dir = "/disk2/yue/final/final_result/cityscapes/"
-instance_origin_txt_dir = '/disk1/yue/cityscapes/instance_upsnet/origin_data/val/txt/'
-instance_origin_segs_dir = '/disk1/yue/cityscapes/instance_upsnet/origin_data/val/segs/'
+track_instance_dir = './data/cityscapes/fore_val_data/'
+semantic_dir = '/disk2/yue/cityscapes_final/semantic/val/'
+depth_dir = './data/cityscapes/depth/val/'
+my_back_dir = "./result/cityscapes/"
+instance_origin_txt_dir = './data/cityscapes/instance_upsnet/origin_data/val/txt/'
+instance_origin_segs_dir = './data/cityscapes/instance_upsnet/origin_data/val/segs/'
 city_dir = os.listdir(image_dir)
 city_dir.sort()
 cnt = 0

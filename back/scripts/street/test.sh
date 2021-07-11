@@ -3,11 +3,11 @@ CUDA_VISIBLE_DEVICES=0 python test.py --gpu_ids 0 \
   --name cityscapes_test \
   --loadSize 1024 \
   --ngf 64 \
-  --ImagesRoot "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/" \
-  --SemanticRoot "/disk1/yue/cityscapes/semantic_new/" \
-  --StaticMapDir "/disk1/yue/cityscapes/dynamic_final/" \
-  --InstanceRoot "/disk1/yue/cityscapes/instance_upsnet/" \
-  --non_rigid_dir "/disk1/yue/cityscapes/non_rigid_mask/val/" \
-  --small_object_mask_dir "/disk1/yue/cityscapes/small_object_mask/val/" \
+  --ImagesRoot "./data/cityscapes/leftImg8bit_sequence_512p/" \
+  --SemanticRoot "./data/cityscapes/semantic/" \
+  --StaticMapDir "./data/cityscapes/dynamic/" \
+  --InstanceRoot "./data/cityscapes/instance_upsnet/" \
+  --non_rigid_dir "./data/cityscapes/non_rigid_mask/val/" \
+  --small_object_mask_dir "./data/cityscapes/small_object_mask/val/" \
   --load_pretrain "./checkpoints/cityscapes/" \
   --how_many 1000
