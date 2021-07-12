@@ -27,7 +27,7 @@ class BaseOptions():
 
         self.parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
         self.parser.add_argument('--name', type=str, default='experiment_name', help='name of the experiment. It decides where to store samples and models')
-        self.parser.add_argument('--dataset', type=str, default='cityscapes', help='chooses how datasets are loaded. [cityscapes | kitti | vkitti | driving]')
+        self.parser.add_argument('--dataset', type=str, default='cityscapes', help='chooses how datasets are loaded. [cityscapes | kitti]')
         self.parser.add_argument('--model', type=str, default='vid2vid', help='chooses which model to use. vid2vid, test')        
         self.parser.add_argument('--nThreads', default=1, type=int, help='# threads for loading data')
         self.parser.add_argument('--checkpoints_dir', type=str, default='./checkpoints', help='models are saved here')

@@ -54,7 +54,6 @@ def test():
     opt.dataset_mode = 'test'
     opt.static = True
     
-    # Dataset city or vkitti
     modelG, flowNet = create_model(opt)
 
     data_loader = CreateDataLoader(opt, flowNet)
