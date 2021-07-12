@@ -14,7 +14,7 @@ distance = lpips_tf.lpips(image_0, image_1, model='net-lin', net='alex')
 msssim = tf.image.ssim_multiscale(image_0[0,...], image_1[0,...], max_val=1)
 
 ## Load GT images
-GT_root = "/disk1/yue/kitti/raw_data_256p/val/"
+GT_root = "./data/kitti/raw_data_256p/val/"
 city_dir = os.listdir(GT_root)
 city_dir.sort()
 true_videos = []
@@ -31,7 +31,7 @@ for i in range(len(city_dir)):
 assert len(true_videos) == 1337
 
 
-my_root = "/disk2/yue/final/final_result/kitti/"
+my_root = "./result/kitti/"
 my_videos = []
 for i in range(1337):
 	sub_dir = my_root + "%04d/"%(i)

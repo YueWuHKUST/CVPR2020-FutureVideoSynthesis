@@ -14,7 +14,7 @@ distance_my = lpips_tf.lpips(image_0, image_my, model='net-lin', net='alex')
 ssim_my = tf.image.ssim_multiscale(image_0[0,...], image_my[0,...], max_val=1.0)
 
 ## Load GT images
-GT_root = "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/val/"
+GT_root = "./data/cityscapes/leftImg8bit_sequence_512p/val/"
 city_dir = os.listdir(GT_root)
 city_dir.sort()
 true_videos = []
@@ -31,7 +31,7 @@ for i in range(len(city_dir)):
 		true_videos.append(image)
 
 
-my_root = "/disk2/yue/final/final_result/cityscapes/"
+my_root = "./result/cityscapes/"
 my_videos = []
 for i in range(500):
 	sub_dir = my_root + "%04d/"%i

@@ -1,0 +1,22 @@
+CUDA_VISIBLE_DEVICES=9 python train_city.py \
+  --gpu_ids 0 \
+  --batchSize 4 \
+  --name kitti \
+  --n_scales_temporal 1 \
+  --ngf 32 \
+  --dataset kitti \
+  --lr 2e-4 \
+  --lambda_D 4.0 \
+  --lambda_D_T 4.0 \
+  --lambda_scale 1.0 \
+  --lambda_shear 1.0 \
+  --lambda_rotation 1.0 \
+  --lambda_translationx 0.1 \
+  --lambda_translationy 0.8 \
+  --lambda_image 1.0 \
+  --loadSize 256 \
+  --niter 40 \
+  --niter_decay 400 \
+  --only_dynamic \
+  --ImagesRoot "./data/kitti/raw_data_256p/" \
+  --SemanticRoot "./data/kitti/semantic/" 
