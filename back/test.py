@@ -62,7 +62,7 @@ def test():
     dataset_size = len(data_loader)
     visualizer = Visualizer(opt)
     iter_path = os.path.join(opt.checkpoints_dir, opt.name, 'iter.txt')
-    save_dir = "/disk2/yue/server6_backup/final/FutureVideoSynthesis/result/%s/"%opt.dataset
+    save_dir = "./result/%s/"%opt.dataset
     print("save_dir = ", save_dir)
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)

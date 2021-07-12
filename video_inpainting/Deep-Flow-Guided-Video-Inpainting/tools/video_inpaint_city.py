@@ -176,9 +176,9 @@ def load_all_image_paths(image_dir):
 
 
 def main():
-    root = "/disk2/yue/server6_backup/final/final_result_2/cityscapes/"
-    #root = "./example/"
-    val_root = "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/val/"
+    root = "./result/cityscapes/"
+    # Load input 4 frames
+    val_root = "./data/cityscapes/leftImg8bit_sequence_512p/val/"
     val_img_list = load_all_image_paths(val_root)
     args = parse_argse()
     for i in range(0, 500):

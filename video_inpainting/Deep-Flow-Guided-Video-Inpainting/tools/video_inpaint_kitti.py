@@ -175,9 +175,8 @@ def load_all_image_paths(image_root):
 
 
 def main():
-    root = "/disk2/yue/server6_backup/final/finetune_0.002_add_person/kitti/"
-    #root = "./example/"
-    val_root = "/disk1/yue/kitti/raw_data/val/"
+    root = "./result/kitti/"
+    val_root = "./data/kitti/raw_data_256p/val/" # load input 4 frames
     val_img_list = load_all_image_paths(val_root)
     assert len(val_img_list) == 1337
     args = parse_argse()

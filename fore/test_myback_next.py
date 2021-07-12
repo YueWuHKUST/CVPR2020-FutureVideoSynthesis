@@ -119,7 +119,7 @@ def combine_fore_back(opt, pred_segs, pred_masks, pred_backs):
 
 
 def test():
-    root = "/disk2/yue/server6_backup/final/final_result_2/cityscapes/"
+    root = "./result/cityscapes/"
     opt = TestOptions().parse()
     ### initialize dataset
     modelG, flowNet = create_model(opt)
@@ -138,10 +138,6 @@ def test():
     back_image_nc = 3
     ### real training starts here  
     for idx, data in enumerate(dataset):
-        #f len(data['Combine'].size()) == 1:
-        #    continue
-        
-
         input_image = Variable(data['Image'][:, :tIn*3, ...]).view(-1, tIn, 3, height, width)
         input_semantic = Variable(data['Semantic'][:, :tIn*semantic_nc, ...]).view(-1, tIn, semantic_nc, height, width)
         target_back_map = Variable(data['Back'][:, tIn*image_nc:(tIn+tOut)*image_nc, ...]).view(-1, tOut, image_nc, height, width)
@@ -186,9 +182,6 @@ def test():
 
             input_combine = input_combine.float().cuda()
             input_mask = input_mask.float().cuda()
-            #print("range combine = ", torch.max(input_combine), torch.min(input_combine))
-            #print("range input mask = ", torch.max(input_mask), torch.min(input_mask))
-            #print("range last object = ", torch.max(last_object), torch.min(last_object))
             warped_object, warped_mask, affine_matrix, pred_complete = modelG.inference(input_combine, input_semantic, input_flow, input_conf, target_back_map, input_mask, last_object, last_mask)
             #### Save temporal result here
             save_dir_cnt = save_dir_idx + "/%02d/"%p

@@ -18,7 +18,7 @@ from util.visualizer import Visualizer
 # Test program for foreground object prediction
 # Each sequence return a list
 opt = TestOptions().parse()
-root  = "/disk2/yue/server6_backup/final/FutureVideoSynthesis/result/%s/"%opt.dataset
+root  = "./result/%s/"%opt.dataset
 if opt.dataset == 'cityscapes':
     height = 512
     width = 1024

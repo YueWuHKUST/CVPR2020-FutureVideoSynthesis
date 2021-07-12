@@ -21,8 +21,8 @@ parser.add_argument('--checkpoint_dir', default='./ckpt/20191030054240327253_cqc
 sp = 1024
 height = 512
 width = 1024
-ImagesRoot = "/disk1/yue/cityscapes/leftImg8bit_sequence_512p/val/"
-SemanticRoot = "/disk1/yue/cityscapes/semantic_new/val/"
+ImagesRoot = "./data/cityscapes/leftImg8bit_sequence_512p/val/"
+SemanticRoot = "./data/cityscapes/semantic/val/"
 def load_all_image_paths(image_root, semantic_root):
     #Image dir is Dir in "train/val/test/" level
     city_dir = os.listdir(image_root)
@@ -106,7 +106,7 @@ if __name__ == "__main__":
         assign_ops.append(tf.assign(var, var_value))
     sess.run(assign_ops)
     print('Model loaded.')
-    root = "/disk2/yue/server6_backup/final/final_result_2/cityscapes/"
+    root = "./result/cityscapes/"
     for ind in range(500):
         print("Processing Ind %d" % (ind))
         st = time.time()

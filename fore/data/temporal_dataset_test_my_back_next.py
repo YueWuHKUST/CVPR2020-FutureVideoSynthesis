@@ -1,5 +1,3 @@
-### Copyright (C) 2017 NVIDIA Corporation. All rights reserved. 
-### Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
 import os.path
 import random, glob
 import torch
@@ -7,9 +5,6 @@ from data.base_dataset import BaseDataset, get_img_params, get_transform
 from PIL import Image
 import numpy as np
 from torch.autograd import Variable
-#import sys
-#sys.path.append("../OpticalFlowToolkit/lib/")
-#import flowlib as fl
 import cv2
 
 def compute_bbox(mask):
@@ -52,8 +47,8 @@ class TestTemporalDataset(BaseDataset):
         self.mask_threshold = int(0.002 * self.height * self.width)
         self.all_image_paths = self.load_all_image_paths(opt.npy_dir)
 
-
-        self.my_back_root = "/disk2/yue/server6_backup/final/final_result_2/cityscapes/"
+        # Load predicted 5 background and foreground
+        self.my_back_root = "./result/cityscapes/"
         self.n_of_seqs = len(self.all_image_paths)                 # number of sequences to train
         print("Testing number of video paths = %d"%self.n_of_seqs)
 
@@ -69,10 +64,8 @@ class TestTemporalDataset(BaseDataset):
         t_bic = get_transform(self.opt, params)
         t_ner = get_transform(self.opt, params, Image.NEAREST, normalize=False)
         cnt_back_dir = self.my_back_root + "%04d/"%(videoid)
-        #if not os.path.exists(cnt_back_dir + "%s_epoch_latest_pred_complete_all_01_gray.png"%self.opt.save_phase):
-        #    return {'Back': 0, 'Mask': 0, 'Semantic': 0, \
-        #        'Combine': 0, 'LastObject': 0, 'Depths': 0, \
-        #        'Classes': 0, 'LastMasks': 0, 'OriginMasks': 0}
+        
+        # Load predict semantic, background, image, and depth
         Semantics = torch.cat([self.get_semantic(cnt_back_dir + "fore_complete_%02d_gray.png"%p, t_ner, is_label=True) for p in range(1,5)], dim=0)
         Backs = torch.cat([self.get_image(cnt_back_dir + "warp_image_bwd_inpainted_%02d.png"%p, t_bic) for p in range(1, 10)], dim=0)
         Images = torch.cat([self.get_image(cnt_back_dir + "fore_complete_%02d.png"%p, t_bic) for p in range(1, 5)], dim=0)

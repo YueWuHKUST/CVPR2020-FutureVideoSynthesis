@@ -17,13 +17,9 @@ parser.add_argument('--output', default='output.png', type=str,
 parser.add_argument('--checkpoint_dir', default='./ckpt/20191102072444392346_cqcpu2_kitti_NORMAL_wgan_gp_256p/', type=str,
                     help='The directory of tensorflow checkpoint.')
 
-#20190916064133972067_cqcpu2_kitti_NORMAL_wgan_gp_256p
 
-image_root = "/disk1/yue/kitti/raw_data/val/"
-semantic_root = "/disk1/yue/kitti/semantic/val/gray/"
-save_dir = "/disk1/yue/kitti/inpainting/val/"
-if not os.path.exists(save_dir):
-    os.makedirs(save_dir)
+image_root = "./data/kitti/raw_data_256p/val/"
+semantic_root = "./data/kitti/semantic/val/"
 
 remain_list = ['2011_09_28_drive_0001_sync', \
                 '2011_09_28_drive_0002_sync', \
@@ -105,15 +101,8 @@ if __name__ == "__main__":
         assign_ops.append(tf.assign(var, var_value))
     sess.run(assign_ops)
     print('Model loaded.')
-    #root = "/disk2/yue/VideoPred/new_w_3/result/kitti_11.14/test_latest/"
-    #root = "/disk2/yue/VideoPred/new_w_3/result/kitti_11.14_less_objects/test_latest/"
-    root = "/disk2/yue/server6_backup/final/finetune_0.002_add_person/kitti/"
-    #root = "/disk2/yue/VideoPred/new_w_3/result/ablation1/test_latest/"
-    #root = "/disk2/yue/VideoPred/new_w_3/result/kitti_ngf64_no_fm_pred3_add_D_T/test_latest/"
-    #root = "/disk2/yue/VideoPred/result/kitti/kitti_ngf64_no_fm_pred3_add_D_T/test_latest/"
+    root = "./result/kitti/"
     for ind in range(2000):
-        #if ind % 10 != 0:
-        #    continue
         print("Processing Ind %d" % (ind))
         st = time.time()
         index = ind

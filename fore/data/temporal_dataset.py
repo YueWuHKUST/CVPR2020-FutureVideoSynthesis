@@ -39,14 +39,7 @@ class TemporalDataset(BaseDataset):
         else:
             self.phase = 'val'
         self.mask_threshold = int(self.height)
-        # fork from data loader
-        #if opt.only_dynamic is True:
-        #    self.all_image_paths = self.load_all_image_paths('./train_dynamic_list_11.5.npy')
-        #elif opt.only_large is True:
-        #    self.all_image_paths = self.load_all_image_paths('./train_object_list_11.5.npy')
-        #else:
-        #    self.all_image_paths = self.load_all_image_paths('./train_list.npy')
-        self.all_image_paths = self.load_all_image_paths('/disk2/yue/server6_backup/final/tracking/train_data_gen/generate_valid_train_list/dynamic_car/')
+        self.all_image_paths = self.load_all_image_paths('./data/cityscapes/tracking/train_data_gen/generate_valid_train_list/dynamic_car/')
         self.n_of_seqs = len(self.all_image_paths)                 # number of sequences to train
         print("Load number of video paths = %d"%self.n_of_seqs)
 
