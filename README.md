@@ -6,9 +6,6 @@ Python 3
 
 Pytorch1.0.0
 
-# To do
-I plan to clean up the code in one month
-
 
 # Components
 
@@ -27,7 +24,7 @@ We use [PWCNet](https://github.com/NVlabs/PWC-Net/tree/master/PyTorch) to comput
 - Video Inpainting modified from [Deep-Flow-Guided-Video-Inpainting](https://github.com/nbei/Deep-Flow-Guided-Video-Inpainting)
 
 # Data preparation
-This [document](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/Data_preparation.md) illustrates how the data preprocessing is done. I release the test result in next section. If you want the preprocessed **test dataset** to verify the result, please drop me an email.
+This [document](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/Data_preparation.md) illustrates how the data preprocessing is done. I release the test result in next section. **If you want the preprocessed test dataset** to verify the result, please drop me an email.
 
 ```bash
 data
@@ -70,7 +67,9 @@ data
 
 # Pretrained Models and Results
 
-The **test results** and pretrained models are in [OneDrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ywudg_connect_ust_hk/ErucIeTSpbNCn7Sf5xB24F0BbSqrcRFuicNPZgK_3TXcDg?e=TBKfgU)
+The **test results without intermediate output** and pretrained models are in [OneDrive](https://hkustconnect-my.sharepoint.com/:f:/g/personal/ywudg_connect_ust_hk/ErucIeTSpbNCn7Sf5xB24F0BbSqrcRFuicNPZgK_3TXcDg?e=TBKfgU)
+
+The **test results with intermediate output** of each test step are in [Google Drive](https://drive.google.com/drive/folders/1Y50hi_9so5Nh4pQiKugVRGo2Ikd3s0fT?usp=sharing)
 
 The details of test setting can be found in [link](https://github.com/YueWuHKUST/FutureVideoSynthesis/blob/main/doc/TestSetting.md)
 
