@@ -70,7 +70,7 @@ class TemporalDataset(BaseDataset):
             image_PIL = self.get_resize_PIL(image_path)
             if self.static:
                 non_rigid = self.compute_non_rigid(semantic_PIL)
-                static_path = static_paths[i]
+                static_path = static_paths[start_idx][i]
                 static_PIL = self.get_resize_PIL(static_path)
                 static = self.delete_non_rigid(static_PIL, non_rigid)
                 Imagei = self.get_image_back(image_PIL, transform_scale_bicubic, static)#
@@ -155,6 +155,7 @@ class TemporalDataset(BaseDataset):
                 image = []
                 semantic = []
                 instance = []
+                static_video = []
                 if self.isTrain is True:
                     st = j*30
                     dst = (j+1)*30
@@ -176,7 +177,7 @@ class TemporalDataset(BaseDataset):
                     full_static_dir = static_map_dir + "%04d/"%video_cnt
                     static_dirs = sorted(os.listdir(full_static_dir))
                     for p in range(len(static_dirs)):
-                        static_video = sorted(glob.glob(full_static_dir + static_dirs[p] + '/*.png'))
+                        static_video.append(sorted(glob.glob(full_static_dir + static_dirs[p] + '/*.png')))
                 if self.static is True:
                     if flag is True:
                         video.append((image, semantic, instance, static_video))
